@@ -1,4 +1,5 @@
-run_speed = 6;
-jump_speed = -9;
-climb_speed = 3;
-Gravity_amount = 0.8;
+grav = 0.2;
+hsp = 0;
+vsp = 0;
+jumpspeed = 7;
+movespeed = 4;
