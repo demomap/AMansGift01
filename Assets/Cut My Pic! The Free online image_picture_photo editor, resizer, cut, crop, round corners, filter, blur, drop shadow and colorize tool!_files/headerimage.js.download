@@ -1,0 +1,16 @@
+	
+	var cmpDate = new Date();
+	var cmpMonth = cmpDate.getMonth()+1;
+	var headerImage = ("/images/cmp-title.png");
+
+
+	if (cmpMonth == 1) { headerImage = "/images/cmp-title-newyear.png" }
+	else if (cmpMonth == 2) { headerImage = "/images/cmp-title-valentines.png" }
+	else if (cmpMonth == 3) { headerImage = "/images/cmp-title-stpatricksday.png" }
+	else if (cmpMonth == 6) { headerImage = "/images/cmp-title-ramadan.png" }
+	else if (cmpMonth == 10) { headerImage = "/images/cmp-title-halloween.gif" }
+	else if (cmpMonth == 11) { headerImage = "/images/cmp-title-thanksgiving.gif" }
+	else if (cmpMonth == 12) { headerImage = "/images/cmp-title-christmas.gif" }
+
+
+	setTimeout(function(){jQuery("#topPageTitleImage").attr('src',headerImage)},250);
