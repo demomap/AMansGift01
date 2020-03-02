@@ -3,6 +3,7 @@ key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
 key_jump = keyboard_check(vk_space);
 
+
 //work out where to move horizontally
 hsp = (key_right - key_left) * hsp_walk;
 
@@ -47,7 +48,8 @@ if (move != 0)
 image_xscale = move;
 sprite_index = sprite_run
 }
-if (vsp_jump = -1 )
+if (vsp_jump >= -1 )
 {
 	sprite_index = sprite_jump;
 }
+
