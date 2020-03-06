@@ -7,22 +7,13 @@ key_jump = keyboard_check(vk_space);
 //work out where to move horizontally
 hsp = (key_right - key_left) * hsp_walk;
 
-
-
-
 //work out where to move vertically 
 vsp = vsp + grv;
 
 //work out if we should jump 
 if(place_meeting(x,y+1,object_block)) and (key_jump)
 {
-	sprite_index = sprite_jump;
 	vsp = vsp_jump;
-	if(vsp == 0)
-	{
-		sprite_index = sprite_stand;
-	}
-	
 }
 
 //check if horizontal collisions and then move if we can 
@@ -52,7 +43,7 @@ y = y + vsp;
 
 var move = (keyboard_check(vk_right)) - (keyboard_check(vk_left))
 
-if(move != 0)
+if (move != 0)
 {
 image_xscale = move;
 sprite_index = sprite_run
@@ -60,5 +51,5 @@ sprite_index = sprite_run
 if (vsp_jump >= -1 )
 {
 	sprite_index = sprite_jump;
-} 
+}
 
